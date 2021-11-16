@@ -6,7 +6,7 @@
         "format:check": "prettier --config ../../.prettierrc.js --ignore-path \"../../.prettierignore\" --check \"{**/*,*}.{js,ts}\"",
         "format:write": "npm run format:check -- --write",
         "lint": "eslint -c ../../.eslintrc.js --ext \".js,.ts\" .",
-        "test": "jest --roots tests/ --testMatch '**/*.test.[jt]s'"
+        "test": "jest --testMatch '**/*.spec.[jt]s'"
     },
     "publishConfig": {
         "access": "public"
