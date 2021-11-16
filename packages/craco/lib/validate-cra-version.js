@@ -1,4 +1,4 @@
-const { getReactScriptVersion } = require("../lib/cra");
+const { getReactScriptVersion } = require("./cra");
 
 function validateCraVersion(cracoConfig) {
     const { isSupported, version } = getReactScriptVersion(cracoConfig);
