@@ -1,4 +1,4 @@
-const { addPlugins } = require("../lib/webpack-plugins");
+const { addPlugins } = require("./webpack-plugins");
 
 describe("webpack-plugins", () => {
     describe("addPlugins", () => {

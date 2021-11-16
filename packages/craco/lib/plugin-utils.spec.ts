@@ -1,4 +1,4 @@
-const { throwUnexpectedConfigError } = require("../lib/plugin-utils");
+const { throwUnexpectedConfigError } = require("./plugin-utils");
 
 describe("plugin-utils", () => {
     describe("throwUnexpectedConfigError", () => {
