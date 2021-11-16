@@ -2,7 +2,7 @@ const { addPlugins } = require("../lib/webpack-plugins");
 
 describe("webpack-plugins", () => {
     describe("addPlugins", () => {
-        test("preserves legacy behaviour", () => {
+        it("should preserve legacy behaviour", () => {
             // Legacy behaviour prepends any plugins into the config.
             const webpackCfg = {
                 plugins: ["test 1"]
@@ -15,7 +15,7 @@ describe("webpack-plugins", () => {
             expect(webpackCfg.plugins[1]).toStrictEqual("test 1");
         });
 
-        test("defaults to legacy behaviour if invalid operation provided", () => {
+        it("defaults to legacy behaviour if invalid operation provided", () => {
             const webpackCfg = {
                 plugins: ["test 1"]
             };
@@ -27,7 +27,7 @@ describe("webpack-plugins", () => {
             expect(webpackCfg.plugins[1]).toStrictEqual("test 1");
         });
 
-        test("prepends to the plugin list", () => {
+        it("prepends to the plugin list", () => {
             const webpackCfg = {
                 plugins: ["test 1"]
             };
@@ -39,7 +39,7 @@ describe("webpack-plugins", () => {
             expect(webpackCfg.plugins[1]).toStrictEqual("test 1");
         });
 
-        test("appends to the plugin list", () => {
+        it("appends to the plugin list", () => {
             const webpackCfg = {
                 plugins: ["test 1"]
             };
@@ -51,7 +51,7 @@ describe("webpack-plugins", () => {
             expect(webpackCfg.plugins[1]).toStrictEqual("test 2");
         });
 
-        test("prepends and appends to the plugin list", () => {
+        it("prepends and appends to the plugin list", () => {
             const webpackCfg = {
                 plugins: ["test 1"]
             };
