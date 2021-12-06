@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "lib",
+
+        "target": "es2016",
+        "module": "commonjs",
+
+        "lib": ["esnext"],
+
+        // JavaScript Support
+        "allowJs": true,
+        "checkJs": true,
+
+        // Should be enabled once JS has been migrated.
+        // "strict": true,
+
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "useDefineForClassFields": true
+    },
+    "include": ["lib/**/*"]
+}

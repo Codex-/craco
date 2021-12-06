@@ -3,6 +3,7 @@
     "description": "Create React App Configuration Override, an easy and comprehensible configuration layer for create-react-app.",
     "version": "6.4.3",
     "scripts": {
+        "build": "tsc",
         "format:check": "prettier --config ../../.prettierrc.js --ignore-path \"../../.prettierignore\" --check \"{**/*,*}.{js,ts}\"",
         "format:write": "npm run format:check -- --write",
         "lint": "eslint -c ../../.eslintrc.js --ext \".js,.ts\" .",
@@ -27,7 +28,7 @@
     },
     "homepage": "https://github.com/gsoft-inc/craco",
     "engines": {
-        "node": ">=6"
+        "node": ">=12"
     },
     "files": [
         "lib"
@@ -42,7 +43,7 @@
         "@types/jest": "^27.0.2",
         "jest": "^27.3.1",
         "react-scripts": "4.*",
-        "typescript": "^4.4.4"
+        "typescript": "^4.5.2"
     },
     "dependencies": {
         "cosmiconfig": "^7.0.1",

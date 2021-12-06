@@ -19,6 +19,8 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: yarn
             - run: yarn install
+            - name: build
+              run: yarn workspace @craco/craco build
             - name: test
               if: ${{ always() }}
               run: yarn workspace @craco/craco test
