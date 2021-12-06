@@ -75,7 +75,7 @@ function mergeWebpackConfig(cracoConfig, webpackConfig, context) {
     resultingWebpackConfig = overrideBabel(cracoConfig, resultingWebpackConfig, context);
     resultingWebpackConfig = overrideEsLint(cracoConfig, resultingWebpackConfig, context);
     resultingWebpackConfig = overrideStyle(cracoConfig, resultingWebpackConfig, context);
-    resultingWebpackConfig = overrideTypeScript(cracoConfig, resultingWebpackConfig, context);
+    resultingWebpackConfig = overrideTypeScript(cracoConfig, resultingWebpackConfig);
 
     if (cracoConfig.webpack) {
         const { alias, plugins, configure } = cracoConfig.webpack;
