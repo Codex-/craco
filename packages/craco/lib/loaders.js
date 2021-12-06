@@ -141,6 +141,7 @@ function addLoader(webpackConfig, matcher, newLoader, positionAdapter) {
     const { isFound, match } = getLoader(webpackConfig, matcher);
 
     if (isFound) {
+        // @ts-ignore match is possibly undefined
         match.parent.splice(positionAdapter(match.index), 0, newLoader);
 
         return result(true);

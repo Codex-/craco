@@ -25,6 +25,7 @@ function createJestConfig(callerCracoConfig, callerContext = {}, options = {}) {
     };
 
     const cracoConfig = processCracoConfig(callerCracoConfig, context);
+    // @ts-ignore context is not implicitly aware of paths as a valid type
     context.paths = getCraPaths(cracoConfig);
 
     const craJestConfigProvider = loadJestConfigProvider(cracoConfig);
