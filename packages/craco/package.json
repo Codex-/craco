@@ -31,10 +31,10 @@
         "node": ">=12"
     },
     "files": [
-        "lib"
+        "dist"
     ],
     "bin": {
-        "craco": "./lib/bin/craco.js"
+        "craco": "./dist/bin/craco.js"
     },
     "peerDependencies": {
         "react-scripts": "^4.0.0"
